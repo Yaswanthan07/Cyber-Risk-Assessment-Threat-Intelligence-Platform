@@ -59,16 +59,29 @@ An advanced Python-based cybersecurity project that performs automated vulnerabi
 
 ---
 
-## 📂 Project Structure
+## 📁 Project Structure
 
 ```
-cyber-risk-platform/
+CyberScan-Pro/
+├── app.py                      # Main Streamlit application
+├── requirements.txt            # Python dependencies
+├── .env.example               # Environment variables template
+├── .gitignore                 # Git ignore rules
+├── streamlit.toml             # Streamlit configuration
+├── README.md                  # This file
 │
-├── Final Project.ipynb     # Main implementation notebook
-├── dashboard.py           # Streamlit dashboard
-├── scan_xml/              # Nmap scan results (XML files)
-├── streamlit.log          # Dashboard logs
-└── README.md              # Project documentation
+├── src/                       # Source code modules
+│   ├── __init__.py
+│   ├── config.py             # Configuration management
+│   ├── scanner.py            # Nmap scanning functionality
+│   ├── threat_intelligence.py # VirusTotal & Shodan integration
+│   ├── risk_calculator.py    # Risk scoring logic
+│   ├── alerter.py            # Email alert system
+│   └── utils.py              # Utility functions
+│
+├── scan_xml/                 # Nmap scan output (XML files)
+├── data/                     # Exported scan results (CSV/JSON)
+└── logs/                     # Application logs
 ```
 
 ---
